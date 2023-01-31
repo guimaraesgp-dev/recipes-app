@@ -6,8 +6,8 @@ import shareIcon from '../images/shareIcon.svg';
 function MealInProgress({ productId }) {
   const history = useHistory();
   const thisPath = history.location.pathname;
-  const [mealDetails, setMealDetails] = useState({});
   const [success, setSuccess] = useState(false);
+  const [mealDetails, setMealDetails] = useState({});
   const [checkboxState, setCheckboxState] = useState(
     JSON.parse(localStorage.getItem('inProgressRecipes')) || {},
   );
